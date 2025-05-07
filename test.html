@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .tribute-card {
+            margin: 10px;
+            padding: 10px;
+            min-height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #343a40;
+            color: white;
+            text-align: center;
+        }
+        
+        .tribute-card img {
+            width: 100%;
+            height: 350px;
+            border-radius: 5px;
+        }
+        
+        .tribute-card h3 {
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .tribute-card p {
+            font-size: 18px;
+        }
+        
+        h1 {
+            color: #424949;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid px-md-5">
+        <h1 class="text-center my-4">Tribute To Great Minds</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+            <div class="col-md-3">
+                <div class="tribute-card" onclick="showPerson('Elon Musk','elonmusk.jpg')">
+                    <img src="elonmusk.jpg" alt="Elon Musk">
+                    <h3>Elon Musk</h3>
+                    <p>Elon Musk is the CEO of Tesla and SpaceX, revolutionizing electric vehicles, space travel, and AI, while also pushing for sustainable energy and Mars colonization.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="tribute-card" onclick="showPerson('Jeff Bezos','jeffbezos.jpg')">
+                    <img src="jeffbezos.jpg" alt=" Jeff Bezos ">
+                    <h3>Jeff Bezos</h3>
+                    <p>Jeff Bezos founded Amazon, transforming e-commerce, cloud computing, and logistics. He also owns The Washington Post and founded Blue Origin for space exploration.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('mark Zuckerberg','markzuckerberg.jpg')">
+                    <img src="markzuckerberg.jpg" alt="Mark Zuckerberg ">
+                    <h3>Mark Zuckerberg</h3>
+                    <p>Mark Zuckerberg co-founded Facebook (Meta), reshaping social media and digital interaction. His focus now includes the Metaverse, artificial intelligence, and virtual reality.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Larry Page','larrypage.jpg')">
+                    <img src="larrypage.jpg" alt="Larry Ellison ">
+                    <h3>Larry Page</h3>
+                    <p>Larry Page co-founded Google, pioneering internet search and digital advertising. He also helped develop AI-driven innovations, self-driving technology, and Alphabet Inc.'s global expansion.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Bernard Arnault','bernardarnault.jpg')">
+                    <img src="bernardarnault.jpg" alt="Bernard Arnault ">
+                    <h3>Bernard Arnault</h3>
+                    <p>Bernard Arnault is the CEO of LVMH, leading luxury brands like Louis Vuitton and Dior. He is among the wealthiest and most influential businessmen worldwide.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Sergey Brin','sergeybrin.jpg')">
+                    <img src="sergeybrin.jpg" alt="Person 6 ">
+                    <h3>Sergey Brin</h3>
+                    <p>Sergey Brin co-founded Google and played a key role in advancing AI, cloud computing, and digital advertising. He continues to invest in innovative technology ventures.</p>
+                </div>
+            </div>
+            <div class="col-md-3 " onclick="showPerson('Bill Gates','billgates.jpg')">
+                <div class="tribute-card ">
+                    <img src="billgates.jpg" alt="Person 7 ">
+                    <h3>Bill Gates</h3>
+                    <p>Bill Gates co-founded Microsoft, transforming personal computing. He later focused on philanthropy through the Gates Foundation, tackling global health, education, and climate change.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Warren Buffett','warrenbuffett.jpg')">
+                    <img src="warrenbuffett.jpg" alt="Person 8 ">
+                    <h3>Warren Buffett</h3>
+                    <p>Warren Buffett, CEO of Berkshire Hathaway, is a legendary investor. He follows value investing principles and donates billions to philanthropic causes, including healthcare and education.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Steve Jobs','stevejobs.jpg')">
+                    <img src="stevejobs.jpg" alt="Person 9 ">
+                    <h3>Steve Jobs</h3>
+                    <p>Steve Jobs co-founded Apple, pioneering revolutionary products like the iPhone, iPad, and Mac. His vision reshaped consumer technology, design, and digital innovation.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Sundar Pichai','sundarpichai.jpg')">
+                    <img src="sundarpichai.jpg" alt="Person 10 ">
+                    <h3>Sundar Pichai</h3>
+                    <p>Sundar Pichai is the CEO of Google and Alphabet. He leads AI, cloud computing, and search engine advancements, driving technological innovation globally.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card " onclick="showPerson('Tim Cook','timcook.jpg')">
+                    <img src="timcook.jpg" alt="Person 11 ">
+                    <h3>Tim Cook</h3>
+                    <p>Tim Cook succeeded Steve Jobs as Apple’s CEO, expanding Apple’s ecosystem, focusing on privacy, and pushing for sustainability and innovation in consumer technology.</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="tribute-card ">
+                    <img src="mukeshambani.jpg" alt="Person 12">
+                    <h3>Mukesh Ambani </h3>
+                    <p>Mukesh Ambani is India's richest person, leading Reliance Industries. He transformed telecom, retail, and energy sectors, making significant contributions to India’s digital revolution.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
