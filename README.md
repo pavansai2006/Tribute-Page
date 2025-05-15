@@ -1,2 +1,2 @@
 # Tribute-Page
-Tribute Page for Top Richest Persons
+Tribute Page of Top Richest Persons
